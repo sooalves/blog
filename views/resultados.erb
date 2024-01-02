@@ -1,0 +1,11 @@
+<h2>Resultados da Pesquisa para '<%= termo_pesquisa %>'</h2>
+<% if resultados.empty? %>
+  <p>Nenhum resultado encontrado.</p>
+<% else %>
+  <div class="resultados">
+    <% resultados.each do |resultado| %>
+      <a href="#<%= resultado[:id] %>"><h2><%= resultado[:titulo] %></h2> <%= resultado[:conteudo] %></a>
+    <% end %>
+  </div>
+<% end %>
+<a href="/">< Voltar</a>

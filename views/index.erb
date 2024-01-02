@@ -1,0 +1,16 @@
+<!-- Contents section -->
+<h2>Conteúdos disponíveis</h2>
+<% posts.each do |posts| %>
+  <!-- Posts -->
+  <div class="postagem">
+    <h3>
+      <a href="#<%= posts[:id] %>">
+        <%= posts[:titulo] %>
+      </a>
+    </h3>
+    <!-- Paragraph -->
+    <p>
+      <%= posts[:conteudo] %>
+    </p>
+  </div>
+<% end %>
