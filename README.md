@@ -1,2 +1,2 @@
 # blog
-a basic website
+a basic website with Sinatra ~ Ruby
